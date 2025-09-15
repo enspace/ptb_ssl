@@ -19,6 +19,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -38,8 +39,25 @@
 				<Event name="ChoiceProcessing">КолонкаОбработкаВыбора</Event>
 			</Events>
 		</InputField>
+		<InputField name="ПереносЗначенийНа" id="68">
+			<DataPath>ПереносЗначенийНа</DataPath>
+			<Visible>false</Visible>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выберите колонку для переноса значений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ListChoiceMode>true</ListChoiceMode>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="ПереносЗначенийНаКонтекстноеМеню" id="69"/>
+			<ExtendedTooltip name="ПереносЗначенийНаРасширеннаяПодсказка" id="70"/>
+		</InputField>
 		<Table name="ЗначенияСтрокКолонки" id="28">
 			<Representation>List</Representation>
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+			</UserVisible>
 			<ReadOnly>true</ReadOnly>
 			<ChangeRowSet>false</ChangeRowSet>
 			<ChangeRowOrder>false</ChangeRowOrder>
@@ -174,6 +192,43 @@
 			</Title>
 			<Type/>
 		</Attribute>
+		<Attribute name="РежимПереноса" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим переноса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереносЗначенийНа" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенос значений на</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Источник" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВвестиЗначениеЗаполнения" id="1">
@@ -186,7 +241,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Ввести значение заполнения</v8:content>
+					<v8:content>Изменить значения в строках</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ВвестиЗначениеЗаполнения</Action>

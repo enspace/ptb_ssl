@@ -744,6 +744,7 @@
 			<Constant>ОтложенноеОбновлениеВГлавномУзлеЗавершеноУспешно</Constant>
 			<Constant>ОтложенноеОбновлениеЗавершеноУспешно</Constant>
 			<Constant>ПараметрыАдминистрированияИБ</Constant>
+			<Constant>ПорядокОбрабатываемыхДанных</Constant>
 			<Constant>РазрешитьДоступКИнтернетСервисам</Constant>
 			<Constant>РегистрироватьПоказателиСерверныхОповещений</Constant>
 			<Constant>СведенияОБлокируемыхОбъектах</Constant>
@@ -780,6 +781,7 @@
 			<CommonForm>СравнениеТабличныхДокументов</CommonForm>
 			<CommonForm>ФормаВыбораПоляОтбораКомпоновкиПТБ</CommonForm>
 			<CommonForm>ФормаНастройкиОтбораКомпоновкиПТБ</CommonForm>
+			<CommonForm>ФормаУправленияНастройкамиОтборовПТБ</CommonForm>
 			<Catalog>БазыЗнанийConfluence</Catalog>
 			<Catalog>ВерсииРасширений</Catalog>
 			<Catalog>ВнешниеПользователи</Catalog>
@@ -797,6 +799,7 @@
 			<Document>ТестовыйДокументПомощникЗаполненияПТБ</Document>
 			<Document>ТестовыйДокументПроведение</Document>
 			<Document>ТестовыйДокументРаботаСФормулами</Document>
+			<Enum>ПорядокОбработчиковОбновления</Enum>
 			<Enum>РежимыВыполненияОбработчиков</Enum>
 			<Enum>РежимыВыполненияОтложенныхОбработчиков</Enum>
 			<Enum>СпособыРасчетаПоказателяФормулы</Enum>
@@ -849,6 +852,7 @@
 			<InformationRegister>СведенияОПользователях</InformationRegister>
 			<InformationRegister>СоставыГруппПользователей</InformationRegister>
 			<InformationRegister>УдалитьБезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
+			<InformationRegister>ФиксацияОбработкиДанныхОбработчиками</InformationRegister>
 			<AccumulationRegister>РегистрОстатки</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
