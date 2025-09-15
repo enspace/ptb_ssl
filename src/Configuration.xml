@@ -831,8 +831,8 @@
 			<InformationRegister>ВерсииПодсистем</InformationRegister>
 			<InformationRegister>ДанныеОбработанныеВЦентральномУзлеРИБ</InformationRegister>
 			<InformationRegister>ДлительныеОперации</InformationRegister>
-			<InformationRegister>ИдентификаторыОбъектовВерсийРасширений</InformationRegister>
 			<InformationRegister>ИдентификаторыБазыЗнанийConfluence</InformationRegister>
+			<InformationRegister>ИдентификаторыОбъектовВерсийРасширений</InformationRegister>
 			<InformationRegister>ИерархияГруппПользователей</InformationRegister>
 			<InformationRegister>ИсторияВыполненияHTTPЗапросов</InformationRegister>
 			<InformationRegister>КэшПрограммныхИнтерфейсов</InformationRegister>
