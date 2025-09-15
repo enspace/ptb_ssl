@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -61,7 +61,6 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаИнформацияОбУдаленииПатчейРасширеннаяПодсказка" id="256"/>
@@ -96,7 +95,6 @@
 		</UsualGroup>
 		<UsualGroup name="Группа1" id="230">
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="231"/>
@@ -187,7 +185,6 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ИнформацияОбОшибкеРасширеннаяПодсказка" id="241"/>
@@ -250,7 +247,6 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИсправленияУстановленыКомпоновкаРасширеннаяПодсказка" id="210"/>
@@ -295,7 +291,6 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОшибкаУстановкиИсправленийКомпоновкаРасширеннаяПодсказка" id="223"/>
@@ -348,7 +343,6 @@
 									<v8:content>Шапка файловая база</v8:content>
 								</v8:item>
 							</Title>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаШапкаФайловаяБазаРасширеннаяПодсказка" id="248"/>
@@ -392,7 +386,6 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаИнформацияФайловаяБазаExtendedTooltip" id="137"/>
@@ -405,7 +398,6 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЗапуститьОтложенноеОбновлениеРасширеннаяПодсказка" id="138"/>
@@ -462,7 +454,6 @@
 									<v8:content>Шапка модель сервиса</v8:content>
 								</v8:item>
 							</Title>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаШапкаМодельСервисаРасширеннаяПодсказка" id="250"/>
@@ -530,7 +521,6 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаХодОбновленияExtendedTooltip" id="151"/>
@@ -542,7 +532,6 @@
 											<v8:content>Шапка клиент сервер</v8:content>
 										</v8:item>
 									</Title>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаШапкаКлиентСерверРасширеннаяПодсказка" id="252"/>
@@ -584,7 +573,6 @@
 											<v8:content>Шапка обновление не выполняется</v8:content>
 										</v8:item>
 									</Title>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаШапкаОбновлениеНеВыполняетсяРасширеннаяПодсказка" id="279"/>
@@ -619,7 +607,6 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИнформацияОПрогрессеExtendedTooltip" id="153"/>
@@ -632,7 +619,6 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПрогрессИОшибкиРасширеннаяПодсказка" id="264"/>
@@ -645,7 +631,6 @@
 														</v8:item>
 													</Title>
 													<Group>AlwaysHorizontal</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>NormalSeparation</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаОтступИПрогрессРасширеннаяПодсказка" id="319"/>
@@ -657,7 +642,6 @@
 																	<v8:content>Выравнивание</v8:content>
 																</v8:item>
 															</Title>
-															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаВыравниваниеРасширеннаяПодсказка" id="321"/>
@@ -677,7 +661,6 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
-															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаПрогрессИПроблемыРасширеннаяПодсказка" id="323"/>
@@ -690,7 +673,6 @@
 																		</v8:item>
 																	</Title>
 																	<Group>Vertical</Group>
-																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ГруппаПрогрессРасширеннаяПодсказка" id="306"/>
@@ -702,7 +684,6 @@
 																					<v8:content>Индикация проблем с обработчиками</v8:content>
 																				</v8:item>
 																			</Title>
-																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<ExtendedTooltip name="ГруппаИндикацияПроблемСОбработчикамиРасширеннаяПодсказка" id="334"/>
@@ -739,7 +720,6 @@
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
-																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<ExtendedTooltip name="ГруппаИндикацияПроблемСДаннымиРасширеннаяПодсказка" id="266"/>
@@ -804,7 +784,6 @@
 																			<v8:content>Зацикливание</v8:content>
 																		</v8:item>
 																	</Title>
-																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ГруппаЗацикливаниеРасширеннаяПодсказка" id="308"/>
@@ -837,7 +816,6 @@
 													<v8:content>Отступ</v8:content>
 												</v8:item>
 											</Title>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОтступРасширеннаяПодсказка" id="287"/>
@@ -855,7 +833,6 @@
 													<v8:content>Приоритет</v8:content>
 												</v8:item>
 											</Title>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПриоритетРасширеннаяПодсказка" id="243"/>
@@ -962,7 +939,6 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПодсказкаПроПериодНаименьшейАктивностиПользователейExtendedTooltip" id="157"/>
@@ -987,7 +963,6 @@
 															<v8:content>Настройка расписания</v8:content>
 														</v8:item>
 													</Title>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаНастройкаРасписанияExtendedTooltip" id="174"/>
@@ -1031,7 +1006,6 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОтложенноеОбновлениеЗавершеноExtendedTooltip" id="164"/>
@@ -1044,7 +1018,6 @@
 										</v8:item>
 									</Title>
 									<Group>AlwaysHorizontal</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаШапкаЗавершеноРасширеннаяПодсказка" id="254"/>
@@ -1093,13 +1066,11 @@
 										</v8:item>
 									</Title>
 									<Group>AlwaysHorizontal</Group>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПереходКСпискуОтложенныхОбработчиковРасширеннаяПодсказка" id="166"/>
 									<ChildItems>
 										<UsualGroup name="Группа2" id="335">
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="336"/>
@@ -1113,7 +1084,6 @@
 										</UsualGroup>
 										<UsualGroup name="Группа3" id="337">
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="338"/>
@@ -1126,7 +1096,6 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПереходКСпискуИПроблемыРасширеннаяПодсказка" id="299"/>
@@ -1138,7 +1107,6 @@
 																	<v8:content>Группа индикация проблем с обработчиками</v8:content>
 																</v8:item>
 															</Title>
-															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаИндикацияПроблемСОбработчикамиЗавершеноРасширеннаяПодсказка" id="351"/>
@@ -1181,7 +1149,6 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
-															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаИндикацияПроблемСДаннымиЗавершеноРасширеннаяПодсказка" id="343"/>
