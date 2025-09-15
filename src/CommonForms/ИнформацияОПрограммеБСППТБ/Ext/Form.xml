@@ -32,6 +32,7 @@
 			<Width>50</Width>
 			<Group>AlwaysHorizontal</Group>
 			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЛоготипЗаголовокРасширеннаяПодсказка" id="8"/>
@@ -69,6 +70,7 @@
 					<Group>Vertical</Group>
 					<HorizontalAlign>Center</HorizontalAlign>
 					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="39"/>
@@ -127,6 +129,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<VerticalSpacing>Single</VerticalSpacing>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДополнительнаяИнформацияРасширеннаяПодсказка" id="24"/>
@@ -157,6 +160,7 @@
 					</ToolTip>
 					<Group>AlwaysHorizontal</Group>
 					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОткрытьДокументациюРасширеннаяПодсказка" id="34"/>
@@ -202,6 +206,7 @@
 					</ToolTip>
 					<Group>AlwaysHorizontal</Group>
 					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСообщитьОбОшибкеРасширеннаяПодсказка" id="26"/>

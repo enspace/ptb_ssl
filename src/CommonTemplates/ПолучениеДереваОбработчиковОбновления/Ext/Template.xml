@@ -326,6 +326,16 @@
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
+			<dataPath>Порядок</dataPath>
+			<field>Порядок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
 			<dataPath>ЧитаемыеОбъекты</dataPath>
 			<field>ЧитаемыеОбъекты</field>
 			<title xsi:type="v8:LocalStringType">
@@ -350,7 +360,7 @@
 		<expression>ВЫРАЗИТЬ(ВЫБОР 
 	КОГДА Версия = "*" ТОГДА -1
 	ИНАЧЕ ОбновлениеИнформационнойБазыСлужебный.ВесВерсии(Версия)
-КОНЕЦ, "Число(12, 0)")</expression>
+КОНЕЦ, "Число(13, 0)")</expression>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
@@ -360,7 +370,7 @@
 		<valueType>
 			<v8:Type>xs:decimal</v8:Type>
 			<v8:NumberQualifiers>
-				<v8:Digits>12</v8:Digits>
+				<v8:Digits>13</v8:Digits>
 				<v8:FractionDigits>0</v8:FractionDigits>
 				<v8:AllowedSign>Any</v8:AllowedSign>
 			</v8:NumberQualifiers>
@@ -382,7 +392,7 @@
 			<dcscom:expression>ВЫРАЗИТЬ(ВЫБОР 
 	КОГДА Версия = "*" ИЛИ ВыполнятьВГруппеОбязательных ТОГДА -1
 	ИНАЧЕ ОбновлениеИнформационнойБазыСлужебный.ВесВерсии(Версия)
-КОНЕЦ, "Число(12, 0)") возр</dcscom:expression>
+КОНЕЦ, "Число(13, 0)")</dcscom:expression>
 			<dcscom:orderType>Asc</dcscom:orderType>
 			<dcscom:autoOrder>false</dcscom:autoOrder>
 		</orderExpression>
@@ -579,6 +589,21 @@
 		<value xsi:type="xs:boolean">false</value>
 		<useRestriction>true</useRestriction>
 	</parameter>
+	<parameter>
+		<name>ИдентификаторОбработчикаОчисткиУстаревшихДанных</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Идентификатор обработчика очистки устаревших данных</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:UUID</v8:Type>
+		</valueType>
+		<value xsi:type="v8:UUID">00000000-0000-0000-0000-000000000000</value>
+		<useRestriction>true</useRestriction>
+		<use>Always</use>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
@@ -612,9 +637,6 @@
 					<dcsset:field>НачальноеЗаполнение</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ИзменяемыеОбъекты</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Комментарий</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -643,6 +665,12 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Многопоточный</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Порядок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИзменяемыеОбъекты</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ЧитаемыеОбъекты</dcsset:field>
@@ -719,6 +747,17 @@
 							<v8:item>
 								<v8:lang>ru</v8:lang>
 								<v8:content>// Версия еще не известна, вызываются при каждом обновлении</v8:content>
+							</v8:item>
+						</dcsset:presentation>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Идентификатор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.ИдентификаторОбработчикаОчисткиУстаревшихДанных</dcsset:right>
+						<dcsset:presentation xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>// Очистка устаревших данных при каждом обновлении</v8:content>
 							</v8:item>
 						</dcsset:presentation>
 					</dcsset:item>

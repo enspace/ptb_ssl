@@ -11,6 +11,12 @@
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Перезапустить</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Перезапустить</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаПерезапуститьРасширеннаяПодсказка" id="16"/>
 			</Button>
 			<Button name="ФормаЗакрыть" id="17">
@@ -52,6 +58,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
@@ -72,6 +79,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="32"/>
@@ -85,7 +93,7 @@
 													<v8:content>Перезапуск отложенного обновления нужен в тех случаях, когда отложенный обработчик завершился с ошибкой, исправление которой потребовало повторно с самого начала зарегистрировать данные для обновления.
 
 При этом:
- • не требуется завершать работу пользователей в программе, а по завершении регистрации отложенное обновление будет запущено автоматически;
+ • не требуется завершать работу пользователей в приложении, а по завершении регистрации отложенное обновление будет запущено автоматически;
  • все незавершенные отложенные обработчики будут перезапущены автоматически. Дополнительно можно выбрать другие обработчики для перезапуска:</v8:content>
 												</v8:item>
 											</Title>

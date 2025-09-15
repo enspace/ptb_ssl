@@ -54,10 +54,12 @@
 		</InputField>
 		<UsualGroup name="Группа1" id="26">
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="27"/>
 			<ChildItems>
 				<UsualGroup name="Группа2" id="28">
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="29"/>
@@ -140,6 +142,7 @@
 					</ChildItems>
 				</Table>
 				<UsualGroup name="Группа3" id="81">
+					<Behavior>Usual</Behavior>
 					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="82"/>
 				</UsualGroup>
 				<Table name="Дерево6" id="30">
@@ -298,6 +301,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа4" id="99">
+			<Behavior>Usual</Behavior>
 			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="100"/>
 		</UsualGroup>
 		<Table name="СписокЗначений" id="83">

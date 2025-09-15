@@ -3,6 +3,7 @@
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -13,6 +14,7 @@
 					<v8:content>Табличные документы</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаТабличныеДокументыРасширеннаяПодсказка" id="133"/>
@@ -25,6 +27,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<ExtendedTooltip name="ГруппаЛевыйТабличныйДокументРасширеннаяПодсказка" id="135"/>
 					<ChildItems>
 						<CommandBar name="ГруппаКоманднаяПанельЛевогоТабличногоДокумента" id="112">
@@ -44,6 +47,12 @@
 										<xr:Ref>StdPicture.MoveUp</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предыдущее изменение</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="ПредыдущееИзменениеЛевыйРасширеннаяПодсказка" id="115"/>
 								</Button>
 								<Button name="СледующееИзменениеЛевый" id="116">
@@ -53,6 +62,12 @@
 										<xr:Ref>StdPicture.MoveDown</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Следующее изменение</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="СледующееИзменениеЛевыйРасширеннаяПодсказка" id="117"/>
 								</Button>
 							</ChildItems>
@@ -60,6 +75,12 @@
 						<SpreadSheetDocumentField name="ТабличныйДокументЛевый" id="77">
 							<DataPath>ТабличныйДокументЛевый</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Табличный документ левый</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>None</TitleLocation>
 							<VerticalScrollBar>true</VerticalScrollBar>
 							<HorizontalScrollBar>true</HorizontalScrollBar>
@@ -80,6 +101,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<ExtendedTooltip name="ГруппаПравыйТабличныйДокументРасширеннаяПодсказка" id="137"/>
 					<ChildItems>
 						<CommandBar name="ГруппаКоманднаяПанельПравогоТабличногоДокумента" id="118">
@@ -98,6 +120,12 @@
 										<xr:Ref>StdPicture.MoveUp</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предыдущее изменение</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="ПредыдущееИзменениеПравыйРасширеннаяПодсказка" id="129"/>
 								</Button>
 								<Button name="СледующееИзменениеПравый" id="130">
@@ -107,6 +135,12 @@
 										<xr:Ref>StdPicture.MoveDown</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Следующее изменение</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="СледующееИзменениеПравыйРасширеннаяПодсказка" id="131"/>
 								</Button>
 							</ChildItems>
@@ -114,6 +148,12 @@
 						<SpreadSheetDocumentField name="ТабличныйДокументПравый" id="80">
 							<DataPath>ТабличныйДокументПравый</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Табличный документ правый</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>None</TitleLocation>
 							<VerticalScrollBar>true</VerticalScrollBar>
 							<HorizontalScrollBar>true</HorizontalScrollBar>

@@ -141,7 +141,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="CommonCommand.ВремяТекущегоСеанса">
+		<Command name="CommonCommand.ВремяВПриложении">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -758,7 +758,7 @@
 		<Command name="0:a6be80f7-d6aa-4371-a180-3d355080d849">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
-		<Command name="CommonCommand.ВремяТекущегоСеанса">
+		<Command name="CommonCommand.ВремяВПриложении">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 		<Command name="0:0d89036c-af6e-4709-847c-0dab74a33d72">

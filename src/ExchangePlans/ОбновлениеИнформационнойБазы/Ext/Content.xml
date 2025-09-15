@@ -69,7 +69,7 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>InformationRegister.БезопасноеХранилищеДанныхОбластейДанных</Metadata>
+		<Metadata>InformationRegister.УдалитьБезопасноеХранилищеДанныхОбластейДанных</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>

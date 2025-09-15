@@ -32,6 +32,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="17"/>
@@ -50,6 +51,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ExtendedTooltip name="ГруппаЛеваяСторонаРасширеннаяПодсказка" id="19"/>
 					<ChildItems>
@@ -116,6 +118,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ExtendedTooltip name="ГруппаПраваяСторонаРасширеннаяПодсказка" id="21"/>
 					<ChildItems>

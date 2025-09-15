@@ -15,6 +15,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="22"/>
 		</UsualGroup>
@@ -181,7 +182,7 @@
 			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="СписокExtendedTooltip" id="15"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="15"/>
 			<SearchStringAddition name="СписокSearchString" id="25">
 				<AdditionSource>
 					<Item>Список</Item>

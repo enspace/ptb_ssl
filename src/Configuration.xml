@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>ПрогТехБизнес</Vendor>
-			<Version>1.1.0.7</Version>
+			<Version>1.1.0.11</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -269,7 +269,7 @@
 			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>TaxiEnableVersion8_2</InterfaceCompatibilityMode>
 			<DatabaseTablespacesUseMode>DontUse</DatabaseTablespacesUseMode>
-			<CompatibilityMode>Version8_3_19</CompatibilityMode>
+			<CompatibilityMode>Version8_3_25</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
@@ -495,7 +495,6 @@
 			<CommonPicture>ТолстаяГраницаСверху</CommonPicture>
 			<CommonPicture>ТолстаяГраницаСнизу</CommonPicture>
 			<CommonPicture>УвеличитьШрифт</CommonPicture>
-			<CommonPicture>УдалитьИнформация</CommonPicture>
 			<CommonPicture>УменьшитьШрифт</CommonPicture>
 			<CommonPicture>Успешно</CommonPicture>
 			<CommonPicture>Успешно32</CommonPicture>
@@ -513,14 +512,16 @@
 			<CommonPicture>ЦветТекста</CommonPicture>
 			<CommonPicture>ЦветФона</CommonPicture>
 			<CommonPicture>ШтампЭлектроннойПодписи</CommonPicture>
+			<CommonPicture>УдалитьИнформация</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>ВыполняетсяОбновлениеИБ</SessionParameter>
-			<SessionParameter>КлючДанныхПовторногоИспользования</SessionParameter>
-			<SessionParameter>ОсновнойЯзык</SessionParameter>
-			<SessionParameter>ОбновлениеСправочниковИдентификаторов</SessionParameter>
 			<SessionParameter>ДлительныеОперации</SessionParameter>
+			<SessionParameter>КлючДанныхПовторногоИспользования</SessionParameter>
+			<SessionParameter>ОбновлениеСправочниковИдентификаторов</SessionParameter>
+			<SessionParameter>ОбновлениеСправочниковПользователей</SessionParameter>
+			<SessionParameter>ОсновнойЯзык</SessionParameter>
 			<SessionParameter>ПараметрыКлиентаНаСервере</SessionParameter>
 			<SessionParameter>ПараметрыОбработчикаОбновления</SessionParameter>
 			<SessionParameter>ПодключенныеРасширения</SessionParameter>
@@ -639,17 +640,21 @@
 			<CommonModule>СерверныеОповещенияГлобальный</CommonModule>
 			<CommonModule>СерверныеОповещенияКлиент</CommonModule>
 			<CommonModule>СерверныеОповещенияСлужебныйВызовСервера</CommonModule>
+			<CommonModule>СерверныеОповещенияСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>СерверныеОповещенияСлужебныйПовтИсп</CommonModule>
 			<CommonModule>СтандартныеПодсистемыВызовСервера</CommonModule>
 			<CommonModule>СтандартныеПодсистемыГлобальный</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиент</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиентПовтИсп</CommonModule>
+			<CommonModule>СтандартныеПодсистемыКлиентСервер</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиентСерверЛокализация</CommonModule>
 			<CommonModule>СтандартныеПодсистемыПовтИсп</CommonModule>
 			<CommonModule>СтандартныеПодсистемыСервер</CommonModule>
+			<CommonModule>СтандартныеПодсистемыСерверЛокализация</CommonModule>
 			<CommonModule>СтроковыеФункции</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиент</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonModule>СтроковыеФункцииКлиентСерверЛокализация</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСерверРФ</CommonModule>
 			<CommonModule>СтроковыеФункцииПТБКлиентСервер</CommonModule>
 			<CommonModule>СтроковыеФункцииПТБСлужебныйКлиентСерверПовтИсп</CommonModule>
@@ -664,14 +669,15 @@
 			<CommonModule>ФайловаяСистемаСлужебныйКлиент</CommonModule>
 			<CommonModule>ФайловаяСистемаСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ФизическиеЛицаКлиентСервер</CommonModule>
+			<CommonModule>ФизическиеЛицаКлиентСерверЛокализация</CommonModule>
 			<ExchangePlan>ОбменConfluence</ExchangePlan>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<WebService>InterfaceVersion</WebService>
 			<EventSubscription>ВыполнитьДействияПослеПолученияДанныхУзлаВРаспределеннойИнформационнойБазе</EventSubscription>
-			<EventSubscription>ЗапретитьПометкуУдаленияПредопределенныхЭлементов</EventSubscription>
 			<EventSubscription>ЗапретитьУдалениеПредопределенныхЭлементов</EventSubscription>
 			<EventSubscription>ОбновитьВнешнегоПользователя</EventSubscription>
 			<EventSubscription>ОбновлениеВерсииИБПередУдалениемСсылочногоОбъекта</EventSubscription>
+			<EventSubscription>ОбработкаПредопределенныхЭлементовПередЗаписью</EventSubscription>
 			<EventSubscription>ОбъектИнтеграцииConfluenceПриЗаписи</EventSubscription>
 			<EventSubscription>ПриОтправкеДанныхГлавному</EventSubscription>
 			<EventSubscription>ПриОтправкеДанныхПодчиненному</EventSubscription>
@@ -706,7 +712,7 @@
 			<DefinedType>ПоказательФормулы</DefinedType>
 			<DefinedType>Пользователь</DefinedType>
 			<DefinedType>ФизическоеЛицо</DefinedType>
-			<CommonCommand>ВремяТекущегоСеанса</CommonCommand>
+			<CommonCommand>ВремяВПриложении</CommonCommand>
 			<CommonCommand>ИнформацияОПрограммеБСППТБ</CommonCommand>
 			<CommonCommand>ПредупрежденияПриЗавершенииРаботы</CommonCommand>
 			<CommonCommand>СведенияОПользователе</CommonCommand>
@@ -738,6 +744,8 @@
 			<Constant>ОтложенноеОбновлениеВГлавномУзлеЗавершеноУспешно</Constant>
 			<Constant>ОтложенноеОбновлениеЗавершеноУспешно</Constant>
 			<Constant>ПараметрыАдминистрированияИБ</Constant>
+			<Constant>РазрешитьДоступКИнтернетСервисам</Constant>
+			<Constant>РегистрироватьПоказателиСерверныхОповещений</Constant>
 			<Constant>СведенияОБлокируемыхОбъектах</Constant>
 			<Constant>СведенияОбОбновленииИБ</Constant>
 			<Constant>СостояниеОтправкиСерверныхОповещений</Constant>
@@ -746,7 +754,7 @@
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
 			<CommonForm>Вопрос</CommonForm>
 			<CommonForm>ВопросОбУстановкеВнешнейКомпоненты</CommonForm>
-			<CommonForm>ВопросОбУстановкеРасширенияРаботыСФайлами</CommonForm>
+			<CommonForm>ВопросОбУстановкеРасширения1СПредприятия</CommonForm>
 			<CommonForm>ВосстановлениеПаролей</CommonForm>
 			<CommonForm>ВосстановлениеСвязиСГлавнымУзлом</CommonForm>
 			<CommonForm>ВходВПрограммуЗапрещен</CommonForm>
@@ -820,12 +828,12 @@
 			<DataProcessor>ТестСериализацииИнтернетСервисы</DataProcessor>
 			<DataProcessor>ТестСтроковыеФункцииПТБ</DataProcessor>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
-			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
 			<InformationRegister>ВерсииПодсистем</InformationRegister>
 			<InformationRegister>ДанныеОбработанныеВЦентральномУзлеРИБ</InformationRegister>
 			<InformationRegister>ДлительныеОперации</InformationRegister>
-			<InformationRegister>ИдентификаторыБазыЗнанийConfluence</InformationRegister>
 			<InformationRegister>ИдентификаторыОбъектовВерсийРасширений</InformationRegister>
+			<InformationRegister>ИдентификаторыБазыЗнанийConfluence</InformationRegister>
+			<InformationRegister>ИерархияГруппПользователей</InformationRegister>
 			<InformationRegister>ИсторияВыполненияHTTPЗапросов</InformationRegister>
 			<InformationRegister>КэшПрограммныхИнтерфейсов</InformationRegister>
 			<InformationRegister>НастройкиИнтеграцииConfluence</InformationRegister>
@@ -840,6 +848,7 @@
 			<InformationRegister>ПрогрессОбновления</InformationRegister>
 			<InformationRegister>СведенияОПользователях</InformationRegister>
 			<InformationRegister>СоставыГруппПользователей</InformationRegister>
+			<InformationRegister>УдалитьБезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
 			<AccumulationRegister>РегистрОстатки</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>

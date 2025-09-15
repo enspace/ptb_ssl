@@ -20,6 +20,7 @@
 					<v8:content>Группа пользователь база знаний</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПользовательБазаЗнанийРасширеннаяПодсказка" id="158"/>
@@ -58,6 +59,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>AlwaysHorizontal</Group>
 			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>web:LightYellow</BackColor>
@@ -139,6 +141,7 @@
 								</v8:item>
 							</ToolTip>
 							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОтборПространстваРасширеннаяПодсказка" id="85"/>
 							<ChildItems>
@@ -285,6 +288,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПространстваМеткиРасширеннаяПодсказка" id="119"/>
@@ -471,6 +475,7 @@
 									<v8:content>Группа поиск горизонтальная</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПоискГоризонтальнаяРасширеннаяПодсказка" id="25"/>
@@ -489,6 +494,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНастройкаСтрокаПоискаРасширеннаяПодсказка" id="52"/>
@@ -834,6 +840,7 @@
 									<v8:content>Группа статья заголовок управление</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаСтатьяЗаголовокУправлениеРасширеннаяПодсказка" id="163"/>
@@ -906,6 +913,7 @@
 									<v8:content>Группа идентификатор версии найти статью</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаИдентификаторВерсииНайтиСтатьюРасширеннаяПодсказка" id="168"/>

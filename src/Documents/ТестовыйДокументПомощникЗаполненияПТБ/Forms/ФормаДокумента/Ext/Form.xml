@@ -106,6 +106,7 @@
 					<v8:content>Группа настройки отбора компоновщика</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаНастройкиОтбораКомпоновщикаРасширеннаяПодсказка" id="30"/>

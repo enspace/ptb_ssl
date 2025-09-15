@@ -15,6 +15,7 @@
 					<v8:content>Отбор и еще</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОтборИЕщеРасширеннаяПодсказка" id="23"/>
@@ -27,6 +28,12 @@
 				</Button>
 				<InputField name="ИмяТаблицы" id="17">
 					<DataPath>ИмяТаблицы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя таблицы</v8:content>
+						</v8:item>
+					</Title>
 					<ListChoiceMode>true</ListChoiceMode>
 					<ContextMenu name="ИмяТаблицыКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="ИмяТаблицыРасширеннаяПодсказка" id="19"/>
@@ -63,6 +70,12 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>~Список.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>

@@ -30,21 +30,22 @@
 					<v8:content>Заголовок</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="2013"/>
+			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="2013"/>
 			<ChildItems>
 				<LabelDecoration name="ОписаниеРаздела" id="1567">
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Синхронизация данных с другими программами и организация совместной работы в распределенной информационной базе.</v8:content>
+							<v8:content>Синхронизация данных с другими приложениями и организация совместной работы в распределенной информационной базе.</v8:content>
 						</v8:item>
 					</Title>
 					<VerticalAlign>Top</VerticalAlign>
 					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="1568"/>
-					<ExtendedTooltip name="ОписаниеРазделаExtendedTooltip" id="2014"/>
+					<ExtendedTooltip name="ОписаниеРазделаРасширеннаяПодсказка" id="2014"/>
 				</LabelDecoration>
 				<CommandBar name="ГруппаСправка" id="2002">
 					<Title>
@@ -53,12 +54,12 @@
 							<v8:content>Справка</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="2016"/>
+					<ExtendedTooltip name="ГруппаСправкаРасширеннаяПодсказка" id="2016"/>
 					<ChildItems>
 						<Button name="Справка" id="2003">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.StandardCommand.Help</CommandName>
-							<ExtendedTooltip name="СправкаExtendedTooltip" id="2017"/>
+							<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="2017"/>
 						</Button>
 					</ChildItems>
 				</CommandBar>
@@ -71,6 +72,7 @@
 					<v8:content>Синхронизация данных</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ChildItemsWidth>Equal</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
@@ -86,9 +88,10 @@
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользоватьСинхронизациюДанныхExtendedTooltip" id="2019"/>
+					<ExtendedTooltip name="ГруппаИспользоватьСинхронизациюДанныхРасширеннаяПодсказка" id="2019"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьСинхронизациюДанных" id="411">
 							<Title>
@@ -106,7 +109,7 @@
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Синхронизация данных с другими программами.</v8:content>
+										<v8:content>Синхронизация данных с другими приложениями.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -126,19 +129,26 @@
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаНастройкиСинхронизацииДанныхExtendedTooltip" id="2022"/>
+					<ExtendedTooltip name="ГруппаНастройкиСинхронизацииДанныхРасширеннаяПодсказка" id="2022"/>
 					<ChildItems>
 						<Button name="НастройкиСинхронизацииДанных" id="1220">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.НастройкиСинхронизацииДанных</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки синхронизации данных</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<ExtendedTooltip name="НастройкиСинхронизацииДанныхExtendedTooltip" id="2023">
+							<ExtendedTooltip name="НастройкиСинхронизацииДанныхРасширеннаяПодсказка" id="2023">
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Настройка и выполнение синхронизации данных с другими программами.</v8:content>
+										<v8:content>Настройка и выполнение синхронизации данных с другими приложениями.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -154,6 +164,7 @@
 					<v8:content>Даты запрета загрузки</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ChildItemsWidth>Equal</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
@@ -169,13 +180,14 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Запрет загрузки данных прошлых периодов из других программ.
+							<v8:content>Запрет загрузки данных прошлых периодов из других приложений.
 Не влияет на распределенные информационные базы.</v8:content>
 						</v8:item>
 					</ToolTip>
 					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДатыЗапретаЗагрузкиИспользованиеРасширеннаяПодсказка" id="2054"/>
@@ -196,7 +208,7 @@
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Запрет загрузки данных прошлых периодов из других программ.
+										<v8:content>Запрет загрузки данных прошлых периодов из других приложений.
 Не влияет на распределенные информационные базы.</v8:content>
 									</v8:item>
 								</Title>
@@ -228,6 +240,7 @@
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДатыЗапретаЗагрузкиНастройкаРасширеннаяПодсказка" id="2062"/>
@@ -241,6 +254,7 @@
 					<v8:content>Синхронизация данных дополнительно</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ChildItemsWidth>Equal</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
@@ -256,9 +270,10 @@
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаРезультатовСинхронизацииДанныхExtendedTooltip" id="2026"/>
+					<ExtendedTooltip name="ГруппаРезультатовСинхронизацииДанныхРасширеннаяПодсказка" id="2026"/>
 					<ChildItems>
 						<Button name="РезультатыСинхронизацииДанных" id="2067">
 							<Type>Hyperlink</Type>
@@ -270,6 +285,25 @@
 									<v8:item>
 										<v8:lang>ru</v8:lang>
 										<v8:content>Просмотр непроведенных документов, незаполненных реквизитов, конфликтов и непринятых по дате запрета.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="УдалениеПредупрежденийСинхронизацииДанных" id="2082">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.УдалениеПредупрежденийСинхронизацииДанных</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удаление предупреждений синхронизации данных</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="УдалениеПредупрежденийСинхронизацииДанныхРасширеннаяПодсказка" id="2083">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Обработка актуальна для списка предупреждений синхронизации, который содержит большое количество записей, приводящих к долгому открытию или невозможности работать</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -286,6 +320,7 @@
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЗагрузкаДанныхEnterpriseDataРасширеннаяПодсказка" id="2070"/>
@@ -309,6 +344,53 @@
 								</Title>
 							</ExtendedTooltip>
 						</Button>
+						<UsualGroup name="ГруппаОценкаПроизводительности" id="2087">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оценка производительности</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Включение оценки производительности для синхронизации в формате EnterpriseData.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОценкаПроизводительностиРасширеннаяПодсказка" id="2088"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьОценкуПроизводительности" id="2084">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Оценка производительности</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьОценкуПроизводительностиКонтекстноеМеню" id="2085"/>
+									<ExtendedTooltip name="ИспользоватьОценкуПроизводительностиРасширеннаяПодсказка" id="2086"/>
+									<Events>
+										<Event name="OnChange">Подключаемый_ПриИзмененииРеквизита</Event>
+									</Events>
+								</CheckBoxField>
+								<Button name="СеансыОбменов" id="2089">
+									<Type>Hyperlink</Type>
+									<CommandName>0</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сеансы обменов</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СеансыОбменовРасширеннаяПодсказка" id="2090"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -322,14 +404,17 @@
 			</Title>
 			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 			<Width>43</Width>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПрефиксУзлаРаспределеннойИнформационнойБазыExtendedTooltip" id="2033">
+			<ExtendedTooltip name="ГруппаПрефиксУзлаРаспределеннойИнформационнойБазыРасширеннаяПодсказка" id="2033">
 				<Width>43</Width>
 				<AutoMaxWidth>false</AutoMaxWidth>
 			</ExtendedTooltip>
 			<ChildItems>
 				<InputField name="ПрефиксУзлаРаспределеннойИнформационнойБазы" id="1995">
+					<ReadOnly>true</ReadOnly>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -338,30 +423,21 @@
 					</Title>
 					<EditTextUpdate>OnValueChange</EditTextUpdate>
 					<ContextMenu name="ПрефиксУзлаРаспределеннойИнформационнойБазыКонтекстноеМеню" id="1996"/>
-					<ExtendedTooltip name="ПрефиксУзлаРаспределеннойИнформационнойБазыExtendedTooltip" id="2035">
+					<ExtendedTooltip name="ПрефиксУзлаРаспределеннойИнформационнойБазыРасширеннаяПодсказка" id="2035">
 						<AutoMaxWidth>false</AutoMaxWidth>
 					</ExtendedTooltip>
-					<Events>
-						<Event name="OnChange">ПрефиксУзлаРаспределеннойИнформационнойБазыПриИзменении</Event>
-					</Events>
 				</InputField>
-				<PictureDecoration name="ДекорацияОжиданиеИзмененияПрефикса" id="2073">
-					<Width>2</Width>
-					<Height>1</Height>
-					<Title formatted="false">
+				<Button name="ИзменитьПрефиксИБ" id="2080">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ИзменитьПрефиксИБ</CommandName>
+					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Декорация ожидание изменения префикса</v8:content>
+							<v8:content>Изменить</v8:content>
 						</v8:item>
 					</Title>
-					<Picture>
-						<xr:Ref>CommonPicture.НезавершившаясяПроверка</xr:Ref>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
-					</Picture>
-					<FileDragMode>AsFile</FileDragMode>
-					<ContextMenu name="ДекорацияОжиданиеИзмененияПрефиксаКонтекстноеМеню" id="2074"/>
-					<ExtendedTooltip name="ДекорацияОжиданиеИзмененияПрефиксаРасширеннаяПодсказка" id="2075"/>
-				</PictureDecoration>
+					<ExtendedTooltip name="ИзменитьПрефиксИБРасширеннаяПодсказка" id="2081"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаВременныеКаталогиКластераСерверов" id="2040">
@@ -373,8 +449,9 @@
 			</Title>
 			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
-			<ExtendedTooltip name="ГруппаВременныеКаталогиКластераСерверовExtendedTooltip" id="2041">
+			<ExtendedTooltip name="ГруппаВременныеКаталогиКластераСерверовРасширеннаяПодсказка" id="2041">
 				<AutoMaxWidth>false</AutoMaxWidth>
 				<Title formatted="false">
 					<v8:item>
@@ -420,6 +497,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаИнтерфейсODataРасширеннаяПодсказка" id="2077"/>
@@ -498,6 +576,30 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НастройкиСинхронизацииДанных</Action>
+		</Command>
+		<Command name="ИзменитьПрефиксИБ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить префикс ИБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьПрефиксИБ</Action>
+		</Command>
+		<Command name="УдалениеПредупрежденийСинхронизацииДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление предупреждений синхронизации данных</v8:content>
+				</v8:item>
+			</Title>
+			<Action>УдалениеПредупрежденийСинхронизацииДанных</Action>
 		</Command>
 	</Commands>
 </Form>

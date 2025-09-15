@@ -27,6 +27,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="11"/>
@@ -45,6 +46,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСравнениеПредложенийРасширеннаяПодсказка" id="21"/>
@@ -87,6 +89,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКодировкаРасширеннаяПодсказка" id="29"/>
@@ -104,6 +107,7 @@
 							<v8:content>Группа тест кодировка1</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаТестКодировка1РасширеннаяПодсказка" id="31"/>
@@ -150,6 +154,7 @@
 							<v8:content>Группа тест кодировка2</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаТестКодировка2РасширеннаяПодсказка" id="35"/>

@@ -33,6 +33,7 @@
 			</ToolTip>
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>web:LightYellow</BackColor>
@@ -89,6 +90,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<ExtendedTooltip name="ГруппаНастройкиИнтеграцииРасширеннаяПодсказка" id="21"/>
 			<ChildItems>
 				<InputField name="Логин" id="7">

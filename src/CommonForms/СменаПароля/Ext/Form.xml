@@ -11,6 +11,12 @@
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.УстановитьПароль</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Установить пароль</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаУстановитьПарольРасширеннаяПодсказка" id="5"/>
 			</Button>
 			<Button name="ФормаЗакрытьФорму" id="79">
@@ -38,7 +44,7 @@
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Для входа в программу смените пароль на новый.</v8:content>
+					<v8:content>Для входа в приложение смените пароль на новый.</v8:content>
 				</v8:item>
 			</Title>
 			<ContextMenu name="ПояснениеПриВходеКонтекстноеМеню" id="2"/>
@@ -52,12 +58,19 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="19"/>
 			<ChildItems>
 				<InputField name="СтарыйПароль" id="66">
 					<DataPath>СтарыйПароль</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Старый пароль</v8:content>
+						</v8:item>
+					</Title>
 					<Width>14</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<PasswordMode>true</PasswordMode>
@@ -71,12 +84,19 @@
 							<v8:content>Новый пароль</v8:content>
 						</v8:item>
 					</Title>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаНовыйПарольРасширеннаяПодсказка" id="73"/>
 					<ChildItems>
 						<InputField name="НовыйПароль" id="8">
 							<DataPath>НовыйПароль</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Новый пароль</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<Width>14</Width>
 							<HorizontalStretch>false</HorizontalStretch>
@@ -91,6 +111,12 @@
 						<InputField name="НовыйПароль2" id="96">
 							<DataPath>НовыйПароль</DataPath>
 							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Новый пароль</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<Width>14</Width>
 							<HorizontalStretch>false</HorizontalStretch>
@@ -105,6 +131,12 @@
 							<Type>UsualButton</Type>
 							<SkipOnInput>true</SkipOnInput>
 							<CommandName>Form.Command.СоздатьПароль</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать пароль</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="СоздатьПарольРасширеннаяПодсказка" id="30"/>
 						</Button>
 					</ChildItems>
@@ -117,12 +149,19 @@
 						</v8:item>
 					</Title>
 					<VerticalStretch>false</VerticalStretch>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПодтверждениеРасширеннаяПодсказка" id="75"/>
 					<ChildItems>
 						<InputField name="Подтверждение" id="11">
 							<DataPath>Подтверждение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подтверждение</v8:content>
+								</v8:item>
+							</Title>
 							<Width>14</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<PasswordMode>true</PasswordMode>
@@ -155,12 +194,19 @@
 							<v8:content>Показывать новый пароль</v8:content>
 						</v8:item>
 					</Title>
+					<Behavior>Usual</Behavior>
 					<Representation>NormalSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПоказыватьНовыйПарольРасширеннаяПодсказка" id="32"/>
 					<ChildItems>
 						<CheckBoxField name="ПоказыватьНовыйПароль" id="26">
 							<DataPath>ПоказыватьНовыйПароль</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Показывать новый пароль</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ПоказыватьНовыйПарольКонтекстноеМеню" id="27"/>
@@ -280,6 +326,11 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольУстановлен" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

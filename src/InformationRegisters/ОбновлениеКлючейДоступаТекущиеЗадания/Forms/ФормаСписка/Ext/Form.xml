@@ -16,6 +16,7 @@
 			</Title>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
@@ -29,16 +30,39 @@
 			<CommandSource>Form</CommandSource>
 			<ExtendedTooltip name="КоманднаяПанельРасширеннаяПодсказка" id="23"/>
 			<ChildItems>
-				<Button name="ФормаВключитьВозможностьРедактирования" id="24">
-					<Type>CommandBarButton</Type>
-					<CommandName>Form.Command.ВключитьВозможностьРедактирования</CommandName>
-					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-					<ExtendedTooltip name="ФормаВключитьВозможностьРедактированияExtendedTooltip" id="25"/>
-				</Button>
 				<Button name="ФормаОтменитьФоновоеЗадание" id="29">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.ОтменитьФоновоеЗадание</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отменить фоновое задание</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ФормаОтменитьФоновоеЗаданиеРасширеннаяПодсказка" id="30"/>
+				</Button>
+				<Button name="ФормаОбновлениеДоступаНаУровнеЗаписей" id="33">
+					<Type>CommandBarHyperlink</Type>
+					<CommandName>Form.Command.ОбновлениеДоступаНаУровнеЗаписей</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление доступа на уровне записей</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФормаОбновлениеДоступаНаУровнеЗаписейРасширеннаяПодсказка" id="34"/>
+				</Button>
+				<Button name="ФормаВключитьВозможностьРедактирования" id="24">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ВключитьВозможностьРедактирования</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включить возможность редактирования</v8:content>
+						</v8:item>
+					</Title>
+					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаВключитьВозможностьРедактированияРасширеннаяПодсказка" id="25"/>
 				</Button>
 			</ChildItems>
 		</CommandBar>
@@ -78,6 +102,12 @@
 					<Button name="СписокКонтекстноеМенюОтменитьФоновоеЗадание" id="31">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ОтменитьФоновоеЗадание</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отменить фоновое задание</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="СписокКонтекстноеМенюОтменитьФоновоеЗаданиеРасширеннаяПодсказка" id="32"/>
 					</Button>
 				</ChildItems>
@@ -188,15 +218,22 @@
 					<v8:content>Отменить фоновое задание</v8:content>
 				</v8:item>
 			</Title>
+			<Action>ОтменитьФоновоеЗадание</Action>
+		</Command>
+		<Command name="ОбновлениеДоступаНаУровнеЗаписей" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновление доступа на уровне записей</v8:content>
+				</v8:item>
+			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отменить фоновое задание потока обновления доступа прямо сейчас.
-Через 15 минут зависшие фоновые задания отменяются автоматически.
-Недостающее фоновое задание будет запущено автоматически.</v8:content>
+					<v8:content>Отображение хода обновления доступа на уровне записей и ручное обновление</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ОтменитьФоновоеЗадание</Action>
+			<Action>ОбновлениеДоступаНаУровнеЗаписей</Action>
 		</Command>
 	</Commands>
 </Form>

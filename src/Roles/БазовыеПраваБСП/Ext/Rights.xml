@@ -44,7 +44,7 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonForm.ВопросОбУстановкеРасширенияРаботыСФайлами</name>
+		<name>CommonForm.ВопросОбУстановкеРасширения1СПредприятия</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -495,13 +495,6 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonForm.Расширения</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

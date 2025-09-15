@@ -19,6 +19,17 @@
 		<HorizontalAlign>Center</HorizontalAlign>
 		<Autofill>false</Autofill>
 		<ChildItems>
+			<Button name="ФормаСоздатьДругой" id="11">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьДругой</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать другой</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаСоздатьДругойРасширеннаяПодсказка" id="12"/>
+			</Button>
 			<Button name="ФормаЗакрыть" id="3">
 				<Type>CommandBarButton</Type>
 				<Representation>Text</Representation>
@@ -64,7 +75,23 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ДляВнешнегоПользователя" id="2">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="СоздатьДругой" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать другой</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьДругой</Action>
+		</Command>
+	</Commands>
 	<Parameters>
 		<Parameter name="ДляВнешнегоПользователя">
 			<Type>

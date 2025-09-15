@@ -8,6 +8,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ТестовыйРежим" id="1">
@@ -18,6 +19,7 @@
 					<v8:content>Тестовый режим</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ТестовыйРежимРасширеннаяПодсказка" id="2"/>
@@ -30,8 +32,8 @@
 						</v8:item>
 					</Title>
 					<Picture>
-						<xr:Ref>CommonPicture.Ошибка32</xr:Ref>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
+						<xr:Ref>StdPicture.DialogStop</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="КартинкаКонтекстноеМеню" id="4"/>
@@ -39,16 +41,6 @@
 				</PictureDecoration>
 				<LabelDecoration name="Надпись" id="6">
 					<Width>60</Width>
-					<Title formatted="true">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Вход в информационную базу был выполнен в целях автоматического тестирования
-с параметром запуска &lt;b&gt;ОтключитьЛогикуНачалаРаботыСистемы&lt;/&gt;.
-
-Работа пользователей в этом режиме настоятельно не рекомендуется,
-так как это приведет к рассогласованию или потере данных.</v8:content>
-						</v8:item>
-					</Title>
 					<ContextMenu name="НадписьКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="НадписьРасширеннаяПодсказка" id="8"/>
 				</LabelDecoration>

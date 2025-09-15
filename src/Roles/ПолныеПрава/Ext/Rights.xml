@@ -553,6 +553,10 @@
 			<value>false</value>
 		</right>
 		<right>
+			<name>ReadDataHistory</name>
+			<value>false</value>
+		</right>
+		<right>
 			<name>UpdateDataHistory</name>
 			<value>false</value>
 		</right>

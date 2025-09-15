@@ -8,6 +8,7 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="25">
+			<Behavior>Usual</Behavior>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="26"/>
 		</UsualGroup>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
@@ -19,6 +20,7 @@
 			</Title>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>

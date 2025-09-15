@@ -51,6 +51,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаБазаЗнанийПользовательРасширеннаяПодсказка" id="11"/>
@@ -85,6 +86,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>AlwaysHorizontal</Group>
 			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>web:LightYellow</BackColor>
