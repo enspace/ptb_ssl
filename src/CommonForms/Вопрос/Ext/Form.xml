@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<EnterKeyBehavior>DefaultButton</EnterKeyBehavior>
 	<AutoTitle>false</AutoTitle>
@@ -39,7 +39,7 @@
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="КолонкиExtendedTooltip" id="17"/>
+			<ExtendedTooltip name="КолонкиРасширеннаяПодсказка" id="17"/>
 			<ChildItems>
 				<PictureDecoration name="Предупреждение" id="5" DisplayImportance="VeryHigh">
 					<Title formatted="false">
@@ -49,12 +49,12 @@
 						</v8:item>
 					</Title>
 					<Picture>
-						<xr:Ref>CommonPicture.Вопрос32</xr:Ref>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
+						<xr:Ref>StdPicture.DialogQuestion</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="ПредупреждениеКонтекстноеМеню" id="6"/>
-					<ExtendedTooltip name="ПредупреждениеExtendedTooltip" id="18"/>
+					<ExtendedTooltip name="ПредупреждениеРасширеннаяПодсказка" id="18"/>
 				</PictureDecoration>
 				<UsualGroup name="Строки" id="16" DisplayImportance="VeryHigh">
 					<Title>
@@ -68,7 +68,7 @@
 					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="СтрокиExtendedTooltip" id="19"/>
+					<ExtendedTooltip name="СтрокиРасширеннаяПодсказка" id="19"/>
 					<ChildItems>
 						<UsualGroup name="ТекстСообщенияФорматированнаяСтрокаГруппа" id="26">
 							<Title>
@@ -77,7 +77,6 @@
 									<v8:content>Текст сообщения форматированная строка (группа)</v8:content>
 								</v8:item>
 							</Title>
-							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ТекстСообщенияФорматированнаяСтрокаГруппаРасширеннаяПодсказка" id="27"/>
@@ -102,14 +101,20 @@
 							<MultiLine>true</MultiLine>
 							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="МногострочныйТекстСообщенияКонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="МногострочныйТекстСообщенияExtendedTooltip" id="21"/>
+							<ExtendedTooltip name="МногострочныйТекстСообщенияРасширеннаяПодсказка" id="21"/>
 						</InputField>
 						<CheckBoxField name="БольшеНеЗадаватьЭтотВопрос" id="3">
 							<DataPath>БольшеНеЗадаватьЭтотВопрос</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Больше не задавать этот вопрос</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="БольшеНеЗадаватьЭтотВопросКонтекстноеМеню" id="4"/>
-							<ExtendedTooltip name="БольшеНеЗадаватьЭтотВопросExtendedTooltip" id="22"/>
+							<ExtendedTooltip name="БольшеНеЗадаватьЭтотВопросРасширеннаяПодсказка" id="22"/>
 						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
