@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
 	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
@@ -29,8 +29,8 @@
 						</v8:item>
 					</Title>
 					<Picture>
-						<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
+						<xr:Ref>StdPicture.DialogExclamation</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="ЗначокПредупрежденияКонтекстноеМеню" id="2"/>
@@ -57,7 +57,7 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>- Для восстановления связи с главным узлом нажмите "Восстановить".
-- Для того чтобы подтвердить отмену связи и начать работу в программе как с самостоятельной информационной базой, нажмите "Отключить".
+- Для того чтобы подтвердить отмену связи и начать работу в приложении, как с самостоятельной информационной базой, нажмите "Отключить".
 </v8:content>
 				</v8:item>
 			</Title>
@@ -78,16 +78,34 @@
 					<Type>CommandBarButton</Type>
 					<DefaultItem>true</DefaultItem>
 					<CommandName>Form.Command.Восстановить</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Восстановить</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ВосстановитьРасширеннаяПодсказка" id="17"/>
 				</Button>
 				<Button name="Отключить" id="18">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.Отключить</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отключить</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="19"/>
 				</Button>
 				<Button name="ЗавершитьРаботу" id="22">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.ЗавершитьРаботу</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершить работу</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="ЗавершитьРаботуРасширеннаяПодсказка" id="23"/>
 				</Button>
 				<Button name="Справка" id="14">

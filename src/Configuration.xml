@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
 	<Configuration uuid="bc259c21-b7b8-4140-ab1c-6956b3de534a">
 		<InternalInfo>
 			<xr:ContainedObject>
@@ -41,7 +41,7 @@
 			</Synonym>
 			<Comment/>
 			<NamePrefix/>
-			<ConfigurationExtensionCompatibilityMode>Version8_3_23</ConfigurationExtensionCompatibilityMode>
+			<ConfigurationExtensionCompatibilityMode>Version8_3_25</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
 			<UsePurposes>
 				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>ПрогТехБизнес</Vendor>
-			<Version>1.1.0.7</Version>
+			<Version>1.1.0.11</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -210,9 +210,30 @@
 					<app:functionality>DocumentScanning</app:functionality>
 					<app:use>false</app:use>
 				</app:functionality>
+				<app:functionality>
+					<app:functionality>SpeechToText</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>Geofences</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>IncomingShareRequests</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>AllIncomingShareRequestsTypesProcessing</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>TextToSpeech</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
 			</UsedMobileApplicationFunctionalities>
 			<StandaloneConfigurationRestrictionRoles/>
 			<MobileApplicationURLs/>
+			<AllowedIncomingShareRequestTypes/>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
 			<DefaultInterface/>
 			<DefaultStyle/>
@@ -248,7 +269,7 @@
 			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>TaxiEnableVersion8_2</InterfaceCompatibilityMode>
 			<DatabaseTablespacesUseMode>DontUse</DatabaseTablespacesUseMode>
-			<CompatibilityMode>Version8_3_19</CompatibilityMode>
+			<CompatibilityMode>Version8_3_25</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
@@ -474,7 +495,6 @@
 			<CommonPicture>ТолстаяГраницаСверху</CommonPicture>
 			<CommonPicture>ТолстаяГраницаСнизу</CommonPicture>
 			<CommonPicture>УвеличитьШрифт</CommonPicture>
-			<CommonPicture>УдалитьИнформация</CommonPicture>
 			<CommonPicture>УменьшитьШрифт</CommonPicture>
 			<CommonPicture>Успешно</CommonPicture>
 			<CommonPicture>Успешно32</CommonPicture>
@@ -492,14 +512,16 @@
 			<CommonPicture>ЦветТекста</CommonPicture>
 			<CommonPicture>ЦветФона</CommonPicture>
 			<CommonPicture>ШтампЭлектроннойПодписи</CommonPicture>
+			<CommonPicture>УдалитьИнформация</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>ВыполняетсяОбновлениеИБ</SessionParameter>
-			<SessionParameter>КлючДанныхПовторногоИспользования</SessionParameter>
-			<SessionParameter>ОсновнойЯзык</SessionParameter>
-			<SessionParameter>ОбновлениеСправочниковИдентификаторов</SessionParameter>
 			<SessionParameter>ДлительныеОперации</SessionParameter>
+			<SessionParameter>КлючДанныхПовторногоИспользования</SessionParameter>
+			<SessionParameter>ОбновлениеСправочниковИдентификаторов</SessionParameter>
+			<SessionParameter>ОбновлениеСправочниковПользователей</SessionParameter>
+			<SessionParameter>ОсновнойЯзык</SessionParameter>
 			<SessionParameter>ПараметрыКлиентаНаСервере</SessionParameter>
 			<SessionParameter>ПараметрыОбработчикаОбновления</SessionParameter>
 			<SessionParameter>ПодключенныеРасширения</SessionParameter>
@@ -618,17 +640,21 @@
 			<CommonModule>СерверныеОповещенияГлобальный</CommonModule>
 			<CommonModule>СерверныеОповещенияКлиент</CommonModule>
 			<CommonModule>СерверныеОповещенияСлужебныйВызовСервера</CommonModule>
+			<CommonModule>СерверныеОповещенияСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>СерверныеОповещенияСлужебныйПовтИсп</CommonModule>
 			<CommonModule>СтандартныеПодсистемыВызовСервера</CommonModule>
 			<CommonModule>СтандартныеПодсистемыГлобальный</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиент</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиентПовтИсп</CommonModule>
+			<CommonModule>СтандартныеПодсистемыКлиентСервер</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиентСерверЛокализация</CommonModule>
 			<CommonModule>СтандартныеПодсистемыПовтИсп</CommonModule>
 			<CommonModule>СтандартныеПодсистемыСервер</CommonModule>
+			<CommonModule>СтандартныеПодсистемыСерверЛокализация</CommonModule>
 			<CommonModule>СтроковыеФункции</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиент</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonModule>СтроковыеФункцииКлиентСерверЛокализация</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСерверРФ</CommonModule>
 			<CommonModule>СтроковыеФункцииПТБКлиентСервер</CommonModule>
 			<CommonModule>СтроковыеФункцииПТБСлужебныйКлиентСерверПовтИсп</CommonModule>
@@ -643,14 +669,15 @@
 			<CommonModule>ФайловаяСистемаСлужебныйКлиент</CommonModule>
 			<CommonModule>ФайловаяСистемаСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ФизическиеЛицаКлиентСервер</CommonModule>
+			<CommonModule>ФизическиеЛицаКлиентСерверЛокализация</CommonModule>
 			<ExchangePlan>ОбменConfluence</ExchangePlan>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<WebService>InterfaceVersion</WebService>
 			<EventSubscription>ВыполнитьДействияПослеПолученияДанныхУзлаВРаспределеннойИнформационнойБазе</EventSubscription>
-			<EventSubscription>ЗапретитьПометкуУдаленияПредопределенныхЭлементов</EventSubscription>
 			<EventSubscription>ЗапретитьУдалениеПредопределенныхЭлементов</EventSubscription>
 			<EventSubscription>ОбновитьВнешнегоПользователя</EventSubscription>
 			<EventSubscription>ОбновлениеВерсииИБПередУдалениемСсылочногоОбъекта</EventSubscription>
+			<EventSubscription>ОбработкаПредопределенныхЭлементовПередЗаписью</EventSubscription>
 			<EventSubscription>ОбъектИнтеграцииConfluenceПриЗаписи</EventSubscription>
 			<EventSubscription>ПриОтправкеДанныхГлавному</EventSubscription>
 			<EventSubscription>ПриОтправкеДанныхПодчиненному</EventSubscription>
@@ -685,7 +712,7 @@
 			<DefinedType>ПоказательФормулы</DefinedType>
 			<DefinedType>Пользователь</DefinedType>
 			<DefinedType>ФизическоеЛицо</DefinedType>
-			<CommonCommand>ВремяТекущегоСеанса</CommonCommand>
+			<CommonCommand>ВремяВПриложении</CommonCommand>
 			<CommonCommand>ИнформацияОПрограммеБСППТБ</CommonCommand>
 			<CommonCommand>ПредупрежденияПриЗавершенииРаботы</CommonCommand>
 			<CommonCommand>СведенияОПользователе</CommonCommand>
@@ -717,6 +744,9 @@
 			<Constant>ОтложенноеОбновлениеВГлавномУзлеЗавершеноУспешно</Constant>
 			<Constant>ОтложенноеОбновлениеЗавершеноУспешно</Constant>
 			<Constant>ПараметрыАдминистрированияИБ</Constant>
+			<Constant>ПорядокОбрабатываемыхДанных</Constant>
+			<Constant>РазрешитьДоступКИнтернетСервисам</Constant>
+			<Constant>РегистрироватьПоказателиСерверныхОповещений</Constant>
 			<Constant>СведенияОБлокируемыхОбъектах</Constant>
 			<Constant>СведенияОбОбновленииИБ</Constant>
 			<Constant>СостояниеОтправкиСерверныхОповещений</Constant>
@@ -725,7 +755,7 @@
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
 			<CommonForm>Вопрос</CommonForm>
 			<CommonForm>ВопросОбУстановкеВнешнейКомпоненты</CommonForm>
-			<CommonForm>ВопросОбУстановкеРасширенияРаботыСФайлами</CommonForm>
+			<CommonForm>ВопросОбУстановкеРасширения1СПредприятия</CommonForm>
 			<CommonForm>ВосстановлениеПаролей</CommonForm>
 			<CommonForm>ВосстановлениеСвязиСГлавнымУзлом</CommonForm>
 			<CommonForm>ВходВПрограммуЗапрещен</CommonForm>
@@ -751,6 +781,7 @@
 			<CommonForm>СравнениеТабличныхДокументов</CommonForm>
 			<CommonForm>ФормаВыбораПоляОтбораКомпоновкиПТБ</CommonForm>
 			<CommonForm>ФормаНастройкиОтбораКомпоновкиПТБ</CommonForm>
+			<CommonForm>ФормаУправленияНастройкамиОтборовПТБ</CommonForm>
 			<Catalog>БазыЗнанийConfluence</Catalog>
 			<Catalog>ВерсииРасширений</Catalog>
 			<Catalog>ВнешниеПользователи</Catalog>
@@ -768,6 +799,7 @@
 			<Document>ТестовыйДокументПомощникЗаполненияПТБ</Document>
 			<Document>ТестовыйДокументПроведение</Document>
 			<Document>ТестовыйДокументРаботаСФормулами</Document>
+			<Enum>ПорядокОбработчиковОбновления</Enum>
 			<Enum>РежимыВыполненияОбработчиков</Enum>
 			<Enum>РежимыВыполненияОтложенныхОбработчиков</Enum>
 			<Enum>СпособыРасчетаПоказателяФормулы</Enum>
@@ -799,12 +831,12 @@
 			<DataProcessor>ТестСериализацииИнтернетСервисы</DataProcessor>
 			<DataProcessor>ТестСтроковыеФункцииПТБ</DataProcessor>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
-			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
 			<InformationRegister>ВерсииПодсистем</InformationRegister>
 			<InformationRegister>ДанныеОбработанныеВЦентральномУзлеРИБ</InformationRegister>
 			<InformationRegister>ДлительныеОперации</InformationRegister>
 			<InformationRegister>ИдентификаторыБазыЗнанийConfluence</InformationRegister>
 			<InformationRegister>ИдентификаторыОбъектовВерсийРасширений</InformationRegister>
+			<InformationRegister>ИерархияГруппПользователей</InformationRegister>
 			<InformationRegister>ИсторияВыполненияHTTPЗапросов</InformationRegister>
 			<InformationRegister>КэшПрограммныхИнтерфейсов</InformationRegister>
 			<InformationRegister>НастройкиИнтеграцииConfluence</InformationRegister>
@@ -819,6 +851,8 @@
 			<InformationRegister>ПрогрессОбновления</InformationRegister>
 			<InformationRegister>СведенияОПользователях</InformationRegister>
 			<InformationRegister>СоставыГруппПользователей</InformationRegister>
+			<InformationRegister>УдалитьБезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
+			<InformationRegister>ФиксацияОбработкиДанныхОбработчиками</InformationRegister>
 			<AccumulationRegister>РегистрОстатки</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>

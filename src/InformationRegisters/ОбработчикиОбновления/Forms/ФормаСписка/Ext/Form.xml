@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -66,6 +66,13 @@
 					</Title>
 					<CommandSource>Item.Список</CommandSource>
 					<ExtendedTooltip name="КоманднаяПанельРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<Button name="ИзменитьФорму" id="89">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="90"/>
+						</Button>
+					</ChildItems>
 				</CommandBar>
 			</ChildItems>
 		</UsualGroup>
@@ -91,6 +98,12 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>~Список.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -140,36 +153,42 @@
 			</Events>
 			<ChildItems>
 				<InputField name="ОбластьДанныхВспомогательныеДанные" id="71">
-					<DataPath>~Список.ОбластьДанныхВспомогательныеДанные</DataPath>
+					<DataPath>Список.ОбластьДанныхВспомогательныеДанные</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Область данных вспомогательные данные</v8:content>
+						</v8:item>
+					</Title>
 					<ContextMenu name="ОбластьДанныхВспомогательныеДанныеКонтекстноеМеню" id="72"/>
 					<ExtendedTooltip name="ОбластьДанныхВспомогательныеДанныеРасширеннаяПодсказка" id="73"/>
 				</InputField>
 				<LabelField name="ИмяОбработчика" id="16">
-					<DataPath>~Список.ИмяОбработчика</DataPath>
+					<DataPath>Список.ИмяОбработчика</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="ИмяОбработчикаКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="ИмяОбработчикаРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<LabelField name="Статус" id="19">
-					<DataPath>~Список.Статус</DataPath>
+					<DataPath>Список.Статус</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="СтатусКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="21"/>
 				</LabelField>
 				<LabelField name="Версия" id="22">
-					<DataPath>~Список.Версия</DataPath>
+					<DataPath>Список.Версия</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="ВерсияКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="РежимВыполнения" id="31">
-					<DataPath>~Список.РежимВыполнения</DataPath>
+					<DataPath>Список.РежимВыполнения</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="РежимВыполненияКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="РежимВыполненияРасширеннаяПодсказка" id="33"/>
 				</LabelField>
 				<LabelField name="ОчередьОтложеннойОбработки" id="58">
-					<DataPath>~Список.ОчередьОтложеннойОбработки</DataPath>
+					<DataPath>Список.ОчередьОтложеннойОбработки</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<Title>
 						<v8:item>
@@ -180,6 +199,44 @@
 					<ContextMenu name="ОчередьОтложеннойОбработкиКонтекстноеМеню" id="59"/>
 					<ExtendedTooltip name="ОчередьОтложеннойОбработкиРасширеннаяПодсказка" id="60"/>
 				</LabelField>
+				<InputField name="Порядок" id="77">
+					<DataPath>Список.Order</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ПорядокКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="ДлительностьОбработки" id="80">
+					<DataPath>Список.ДлительностьОбработки</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДлительностьОбработкиКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ДлительностьОбработкиРасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="ИмяБиблиотеки" id="83">
+					<DataPath>Список.ИмяБиблиотеки</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ИмяБиблиотекиКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ИмяБиблиотекиРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="ДлительностьРегистрацииДанных" id="86">
+					<DataPath>Список.ДлительностьРегистрацииДанных</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность регистрации, секунд</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДлительностьРегистрацииДанныхКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ДлительностьРегистрацииДанныхРасширеннаяПодсказка" id="88"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 		<LabelDecoration name="ПрогрессОбновленияОбластейДанных" id="74">
@@ -206,38 +263,149 @@
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
-				<QueryText>ВЫБРАТЬ 
-       ОбработчикиОбновления.ИмяОбработчика, 
-       ОбработчикиОбновления.Статус, 
-       ОбработчикиОбновления.Версия, 
-       ОбработчикиОбновления.ИмяБиблиотеки, 
-       ОбработчикиОбновления.ДлительностьОбработки, 
-       ОбработчикиОбновления.РежимВыполнения, 
-       ОбработчикиОбновления.ВерсияРегистрации, 
-       ОбработчикиОбновления.ВерсияПорядок, 
-       ОбработчикиОбновления.Идентификатор, 
-       ОбработчикиОбновления.ЧислоПопыток, 
-       ОбработчикиОбновления.СтатистикаВыполнения, 
-       ОбработчикиОбновления.ИнформацияОбОшибке, 
-       ОбработчикиОбновления.Комментарий, 
-       ОбработчикиОбновления.Приоритет, 
-       ОбработчикиОбновления.ПроцедураПроверки, 
-       ОбработчикиОбновления.ПроцедураЗаполненияДанныхОбновления, 
-       ОбработчикиОбновления.ОчередьОтложеннойОбработки, 
-       ОбработчикиОбновления.ЗапускатьТолькоВГлавномУзле, 
-       ОбработчикиОбновления.ЗапускатьИВПодчиненномУзлеРИБСФильтрами, 
-       ОбработчикиОбновления.Многопоточный, 
-       ОбработчикиОбновления.ОбработкаПорцииЗавершена, 
-       ОбработчикиОбновления.ГруппаОбновления, 
-       ОбработчикиОбновления.ИтерацияЗапуска, 
-       ОбработчикиОбновления.ОбрабатываемыеДанные, 
-       ОбработчикиОбновления.РежимВыполненияОтложенногоОбработчика, 
-       ОбработчикиОбновления.ИзменяемыеОбъекты,
-       ОбработчикиОбновления.ОбластьДанныхВспомогательныеДанные
- ИЗ 
-       РегистрСведений.ОбработчикиОбновления
- КАК 
-       ОбработчикиОбновления</QueryText>
+				<QueryText>ВЫБРАТЬ
+	ОбработчикиОбновленияПереопределяемый.ИмяОбработчика,
+	ОбработчикиОбновленияПереопределяемый.Статус,
+	ОбработчикиОбновленияПереопределяемый.Версия,
+	ОбработчикиОбновленияПереопределяемый.ИмяБиблиотеки,
+	ОбработчикиОбновленияПереопределяемый.ДлительностьОбработки,
+	ОбработчикиОбновленияПереопределяемый.РежимВыполнения,
+	ОбработчикиОбновленияПереопределяемый.ВерсияРегистрации,
+	ОбработчикиОбновленияПереопределяемый.ВерсияПорядок,
+	ОбработчикиОбновленияПереопределяемый.Идентификатор,
+	ОбработчикиОбновленияПереопределяемый.ЧислоПопыток,
+	ОбработчикиОбновленияПереопределяемый.СтатистикаВыполнения,
+	ОбработчикиОбновленияПереопределяемый.ИнформацияОбОшибке,
+	ОбработчикиОбновленияПереопределяемый.Комментарий,
+	ОбработчикиОбновленияПереопределяемый.Приоритет,
+	ОбработчикиОбновленияПереопределяемый.ПроцедураПроверки,
+	ОбработчикиОбновленияПереопределяемый.ПроцедураЗаполненияДанныхОбновления,
+	ОбработчикиОбновленияПереопределяемый.ОчередьОтложеннойОбработки,
+	ОбработчикиОбновленияПереопределяемый.ЗапускатьТолькоВГлавномУзле,
+	ОбработчикиОбновленияПереопределяемый.ЗапускатьИВПодчиненномУзлеРИБСФильтрами,
+	ОбработчикиОбновленияПереопределяемый.Многопоточный,
+	ОбработчикиОбновленияПереопределяемый.ОбработкаПорцииЗавершена,
+	ОбработчикиОбновленияПереопределяемый.ГруппаОбновления,
+	ОбработчикиОбновленияПереопределяемый.ИтерацияЗапуска,
+	ОбработчикиОбновленияПереопределяемый.ОбрабатываемыеДанные,
+	ОбработчикиОбновленияПереопределяемый.РежимВыполненияОтложенногоОбработчика,
+	ОбработчикиОбновленияПереопределяемый.ИзменяемыеОбъекты,
+	0 КАК ОбластьДанныхВспомогательныеДанные,
+	ОбработчикиОбновленияПереопределяемый.ДлительностьРегистрацииДанных
+ИЗ
+	РегистрСведений.ОбработчикиОбновления КАК ОбработчикиОбновленияПереопределяемый</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяОбработчика</dcssch:dataPath>
+					<dcssch:field>ИмяОбработчика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Статус</dcssch:dataPath>
+					<dcssch:field>Статус</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Версия</dcssch:dataPath>
+					<dcssch:field>Версия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяБиблиотеки</dcssch:dataPath>
+					<dcssch:field>ИмяБиблиотеки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлительностьОбработки</dcssch:dataPath>
+					<dcssch:field>ДлительностьОбработки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РежимВыполнения</dcssch:dataPath>
+					<dcssch:field>РежимВыполнения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВерсияРегистрации</dcssch:dataPath>
+					<dcssch:field>ВерсияРегистрации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВерсияПорядок</dcssch:dataPath>
+					<dcssch:field>ВерсияПорядок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Идентификатор</dcssch:dataPath>
+					<dcssch:field>Идентификатор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЧислоПопыток</dcssch:dataPath>
+					<dcssch:field>ЧислоПопыток</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатистикаВыполнения</dcssch:dataPath>
+					<dcssch:field>СтатистикаВыполнения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИнформацияОбОшибке</dcssch:dataPath>
+					<dcssch:field>ИнформацияОбОшибке</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПроцедураПроверки</dcssch:dataPath>
+					<dcssch:field>ПроцедураПроверки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПроцедураЗаполненияДанныхОбновления</dcssch:dataPath>
+					<dcssch:field>ПроцедураЗаполненияДанныхОбновления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОчередьОтложеннойОбработки</dcssch:dataPath>
+					<dcssch:field>ОчередьОтложеннойОбработки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗапускатьТолькоВГлавномУзле</dcssch:dataPath>
+					<dcssch:field>ЗапускатьТолькоВГлавномУзле</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗапускатьИВПодчиненномУзлеРИБСФильтрами</dcssch:dataPath>
+					<dcssch:field>ЗапускатьИВПодчиненномУзлеРИБСФильтрами</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Многопоточный</dcssch:dataPath>
+					<dcssch:field>Многопоточный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбработкаПорцииЗавершена</dcssch:dataPath>
+					<dcssch:field>ОбработкаПорцииЗавершена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппаОбновления</dcssch:dataPath>
+					<dcssch:field>ГруппаОбновления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИтерацияЗапуска</dcssch:dataPath>
+					<dcssch:field>ИтерацияЗапуска</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбрабатываемыеДанные</dcssch:dataPath>
+					<dcssch:field>ОбрабатываемыеДанные</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РежимВыполненияОтложенногоОбработчика</dcssch:dataPath>
+					<dcssch:field>РежимВыполненияОтложенногоОбработчика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИзменяемыеОбъекты</dcssch:dataPath>
+					<dcssch:field>ИзменяемыеОбъекты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбластьДанныхВспомогательныеДанные</dcssch:dataPath>
+					<dcssch:field>ОбластьДанныхВспомогательныеДанные</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлительностьРегистрацииДанных</dcssch:dataPath>
+					<dcssch:field>ДлительностьРегистрацииДанных</dcssch:field>
+				</Field>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

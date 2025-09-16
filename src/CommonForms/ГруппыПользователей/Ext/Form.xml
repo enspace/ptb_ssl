@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -31,7 +31,7 @@
 				</v8:item>
 			</Title>
 			<PagesRepresentation>None</PagesRepresentation>
-			<ExtendedTooltip name="ГруппыИлиПредупреждениеExtendedTooltip" id="27"/>
+			<ExtendedTooltip name="ГруппыИлиПредупреждениеРасширеннаяПодсказка" id="27"/>
 			<ChildItems>
 				<Page name="Группа" id="15">
 					<Title>
@@ -40,7 +40,7 @@
 							<v8:content>Группа</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="ГруппаExtendedTooltip" id="28"/>
+					<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="28"/>
 					<ChildItems>
 						<CommandBar name="КоманднаяПанель" id="17">
 							<Title>
@@ -50,24 +50,50 @@
 								</v8:item>
 							</Title>
 							<CommandSource>Form</CommandSource>
-							<ExtendedTooltip name="КоманднаяПанельExtendedTooltip" id="29"/>
+							<ExtendedTooltip name="КоманднаяПанельРасширеннаяПодсказка" id="29"/>
 							<ChildItems>
 								<Button name="ФормаЗаписатьИЗакрыть" id="9">
 									<Type>CommandBarButton</Type>
 									<DefaultButton>true</DefaultButton>
 									<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
-									<ExtendedTooltip name="ФормаЗаписатьИЗакрытьExtendedTooltip" id="30"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Записать и закрыть</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="30"/>
 								</Button>
 								<Button name="ФормаИсключитьИзВсехГрупп" id="11">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.ИсключитьИзВсехГрупп</CommandName>
-									<ExtendedTooltip name="ФормаИсключитьИзВсехГруппExtendedTooltip" id="31"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исключить из всех групп</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ФормаИсключитьИзВсехГруппРасширеннаяПодсказка" id="31"/>
 								</Button>
 								<Button name="ВывестиСписок" id="20">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Item.ДеревоГрупп.StandardCommand.OutputList</CommandName>
-									<ExtendedTooltip name="ВывестиСписокExtendedTooltip" id="32"/>
+									<ExtendedTooltip name="ВывестиСписокРасширеннаяПодсказка" id="32"/>
 								</Button>
+								<SearchStringAddition name="СтрокаПоиск" id="52">
+									<AdditionSource>
+										<Item>ДеревоГрупп</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поиск</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтрокаПоискКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="СтрокаПоискРасширеннаяПодсказка" id="54"/>
+								</SearchStringAddition>
 							</ChildItems>
 						</CommandBar>
 						<Table name="ДеревоГрупп" id="1">
@@ -107,7 +133,7 @@
 							<AutoCommandBar name="ДеревоГруппКоманднаяПанель" id="3">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ДеревоГруппExtendedTooltip" id="35"/>
+							<ExtendedTooltip name="ДеревоГруппРасширеннаяПодсказка" id="35"/>
 							<SearchStringAddition name="ДеревоГруппСтрокаПоиска" id="43">
 								<AdditionSource>
 									<Item>ДеревоГрупп</Item>
@@ -144,21 +170,33 @@
 										</v8:item>
 									</Title>
 									<Group>InCell</Group>
-									<ExtendedTooltip name="ГруппаПометкаКартинкаExtendedTooltip" id="36"/>
+									<ExtendedTooltip name="ГруппаПометкаКартинкаРасширеннаяПодсказка" id="36"/>
 									<ChildItems>
 										<CheckBoxField name="ДеревоГруппПометка" id="6">
 											<DataPath>ДеревоГрупп.Пометка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пометка</v8:content>
+												</v8:item>
+											</Title>
 											<HorizontalAlign>Left</HorizontalAlign>
 											<EditMode>EnterOnInput</EditMode>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ДеревоГруппПометкаКонтекстноеМеню" id="7"/>
-											<ExtendedTooltip name="ДеревоГруппПометкаExtendedTooltip" id="37"/>
+											<ExtendedTooltip name="ДеревоГруппПометкаРасширеннаяПодсказка" id="37"/>
 											<Events>
 												<Event name="OnChange">ДеревоГруппПометкаПриИзменении</Event>
 											</Events>
 										</CheckBoxField>
 										<PictureField name="ДеревоГруппКартинка" id="12">
 											<DataPath>ДеревоГрупп.Картинка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Картинка</v8:content>
+												</v8:item>
+											</Title>
 											<HorizontalAlign>Left</HorizontalAlign>
 											<EditMode>EnterOnInput</EditMode>
 											<ValuesPicture>
@@ -167,17 +205,23 @@
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ДеревоГруппКартинкаКонтекстноеМеню" id="13"/>
-											<ExtendedTooltip name="ДеревоГруппКартинкаExtendedTooltip" id="38"/>
+											<ExtendedTooltip name="ДеревоГруппКартинкаРасширеннаяПодсказка" id="38"/>
 										</PictureField>
 										<InputField name="ДеревоГруппГруппа" id="4">
 											<DataPath>ДеревоГрупп.Группа</DataPath>
 											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа</v8:content>
+												</v8:item>
+											</Title>
 											<HorizontalAlign>Left</HorizontalAlign>
 											<EditMode>EnterOnInput</EditMode>
 											<TextEdit>false</TextEdit>
 											<ChoiceListButton>false</ChoiceListButton>
 											<ContextMenu name="ДеревоГруппГруппаКонтекстноеМеню" id="5"/>
-											<ExtendedTooltip name="ДеревоГруппГруппаExtendedTooltip" id="39"/>
+											<ExtendedTooltip name="ДеревоГруппГруппаРасширеннаяПодсказка" id="39"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -193,7 +237,7 @@
 						</v8:item>
 					</Title>
 					<Group>AlwaysHorizontal</Group>
-					<ExtendedTooltip name="ПредупреждениеExtendedTooltip" id="40"/>
+					<ExtendedTooltip name="ПредупреждениеРасширеннаяПодсказка" id="40"/>
 					<ChildItems>
 						<PictureDecoration name="КартинкаПредупреждения" id="21">
 							<Title formatted="false">
@@ -203,12 +247,12 @@
 								</v8:item>
 							</Title>
 							<Picture>
-								<xr:Ref>CommonPicture.Информация32</xr:Ref>
-								<xr:LoadTransparent>false</xr:LoadTransparent>
+								<xr:Ref>StdPicture.DialogInformation</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</Picture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="КартинкаПредупрежденияКонтекстноеМеню" id="22"/>
-							<ExtendedTooltip name="КартинкаПредупрежденияExtendedTooltip" id="41"/>
+							<ExtendedTooltip name="КартинкаПредупрежденияРасширеннаяПодсказка" id="41"/>
 						</PictureDecoration>
 						<LabelDecoration name="ТекстПредупреждения" id="23">
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -221,7 +265,7 @@
 							</Title>
 							<VerticalAlign>Center</VerticalAlign>
 							<ContextMenu name="ТекстПредупрежденияКонтекстноеМеню" id="24"/>
-							<ExtendedTooltip name="ТекстПредупрежденияExtendedTooltip" id="42"/>
+							<ExtendedTooltip name="ТекстПредупрежденияРасширеннаяПодсказка" id="42"/>
 						</LabelDecoration>
 					</ChildItems>
 				</Page>
@@ -302,6 +346,15 @@
 		<Attribute name="ЭтоВнешниеПользователи" id="2">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяКолонкиСостава" id="6">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
